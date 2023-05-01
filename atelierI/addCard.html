@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Standard Meta -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+        <!-- Site Properties -->
+        <title>Grid Example - Semantic</title>
+
+        <link rel="stylesheet" type="text/css" href="../lib/Semantic-UI-CSS-master/semantic.min.css">
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+    </head>
+
+    <body>
+        <div class="ui pointing menu">
+            <a class="item" href="card.html?param=non">
+                Home
+            </a>
+            <a class="item" href="searchCard.html?recherche=sung"> 
+                searchCard
+            </a>
+            <a class="item active" href="addCard.html">
+                Add Card
+            </a>
+            <div class="right menu">
+                <div class="item">
+                    <div class="ui transparent icon input">
+                        <form method="GET" action="searchCard.html">
+                            <input type="text" name="recherche" placeholder="Search...">
+                            <button id="submit">
+                                <i class="search link icon"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui five column grid">
+            <div class="row"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column">
+                <!--
+                <form class="ui form" action="./addData" method="GET">
+                    <h3 class="ui dividing header">Add User Information</h3>
+                    <div class="field">
+                        <label>Surname Name</label>
+                        <input type="text" name="first-name" placeholder="First Name">
+                    </div>
+                    <div class="field">
+                        <label>Last Name</label>
+                        <input type="text" name="last-name" placeholder="Last Name">
+                    </div>
+                    <div class="field">
+                        <div class="ui checkbox field">
+                            <input type="checkbox" name="pvisible">
+                            <label>Make my profile visible</label>
+                        </div>
+                    </div>
+                    <button class="ui button" type="submit" >Submit</button>
+                </form>
+                -->
+                <form class="ui form" id="cardForm" >
+                    <h3 class="ui dividing header">Add Card Information</h3>
+                    <div class="field">
+                        <label for="smallImgUrl">Family image URL:</label>
+                        <input type="text" id="smallImgUrl" name="smallImgUrl" required>
+                    </div>
+                    <div class="field">    
+                        <label for="family">Family:</label>
+                        <input type="text" id="family" name="family" required>
+                    </div>
+                    <div class="field">
+                        <label for="imgUrl">Image URL:</label>
+                        <input type="text" id="imgUrl" name="imgUrl" required>
+                    </div>
+                    <div class="field">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="field">
+                        <label for="description">Description:</label>
+                        <textarea id="description" name="description" required></textarea>
+                    </div>
+                    <div class="field">
+                        <label for="hp">hp:</label>
+                        <input type="text" id="hp" name="hp" required>
+                    </div>
+                    <div class="field">
+                        <label for="energy">Energy:</label>
+                        <input type="text" id="energy" name="energy" required>
+                    <div class="field">
+                        <label for="attack">Attack:</label>
+                        <input type="text" id="attack" name="attack" required>
+                    </div>
+                    <div class="field">
+                        <label for="defense">Defense:</label>
+                        <input type="text" id="defense" name="defense" required>
+                    </div>
+
+                    <button id="submit" type="submit">Submit</button>
+                  </form>
+
+            </div>
+        </div>
+        <script src="js/addCard.js"></script> 
+    </body>
+</html>
