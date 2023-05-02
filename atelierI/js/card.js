@@ -16,7 +16,7 @@ if(param1 == "non"){
     const data = localStorage.getItem("monFichier")
     const parsedData = JSON.parse(data)
 
-    for(const card of parsedData.slice(0,3)){
+    for(const card of parsedData){
         let clone = document.importNode(template.content, true);
         //pour le button
         let choice = ["Buy","Read"]
@@ -46,7 +46,7 @@ else{
                 localStorage.setItem("monFichier",jsonData)
                 const parsedData = JSON.parse(jsonData)
 
-                for(const card of parsedData.slice(0,3)){
+                for(const card of parsedData){
                     let clone = document.importNode(template.content, true);
                     //pour le button
                     let choice = ["Buy","Read"]
