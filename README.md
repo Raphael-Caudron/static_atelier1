@@ -15,6 +15,7 @@ Cette page sert pour la recherche des cartes selon son nom. Elle affiche la cart
 
 ## Add Card
 
-Cette page sert à ajouter une carte aux données pour la session courante (tant qu'on ne se redirige pas vers "card.html" en écrivant card.html dans la barre de recherche ou qu'on redémarrage le serveur, les cartes ajoutées restent en mémoire). Toutes les sections sont obligatoires pour envoyer les formulaire.
+Cette page sert à ajouter une carte aux données pour la session courante (tant qu'on ne se redirige pas vers "card.html" en écrivant card.html dans la barre de recherche ou qu'on redémarrage le serveur, les cartes ajoutées restent en mémoire locale). Toutes les sections sont obligatoires pour envoyer les formulaire.\
+Au début, j'ajoutais les cartes en local car je pensais que cela suffisait mais après discussion j'ai rajouté la requête POST vers l'API pour ajouter des cartes dans la base de données. J'ai quand même laissé tout ce qui se fait en local pour éviter de tout le temps recharger la base en entière.
 
 
